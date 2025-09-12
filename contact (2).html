@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor y Aroma - Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact (2).css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="imagenes/sabor22.png" alt="Logo Cafetería"></a>
+    </div>
+    
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu (2).html">Menú</a></li>
+      <li><a href="about (2).html">Nosotros</a></li>
+      <li><a href="compras (2).html" class="active">Contacto</a></li>
+      <li><a href="compras (2).html" class="cart-link">Compras <span class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  
+  <!-- Contenido Principal -->
+  <main class="contact-container">
+    
+    <!-- Hero Section con imagen de fondo -->
+    <section class="contact-hero" style="background-image: url('image/fondo\ 1.jpg');">
+      <div class="hero-content">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para servirte y responder todas tus preguntas</p>
+      </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt">🚩</i>
+            </div>
+            <h3>Visítanos</h3>
+            <p>Instituto Nacional General Francisco Menéndez<br>San Salvador, El Salvador</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone">📞</i>
+            </div>
+            <h3>Llámanos</h3>
+            <p>+503 1234 5678<br>+503 9876 5432</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope">✉️</i>
+            </div>
+            <h3>Escríbenos</h3>
+            <p>info@aroma.com<br>pedidos@cafesupremo.com</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock">🕐</i>
+            </div>
+            <h3>Horario</h3>
+            <p>Lunes a Viernes: 7:00 AM - 9:00 PM<br>Sábado y Domingo: 8:00 AM - 10:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Contacto y Mapa -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-map-grid">
+          <div class="contact-form">
+            <h2>Envíanos un Mensaje</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Tu mensaje..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+              </button>
+            </form>
+          </div>
+          
+          <div class="map-container">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map">
+              <!-- Mapa del Instituto Nacional General Francisco Menéndez -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.137735872123!2d-89.21338832530005!3d13.692397486727915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633067b4117755%3A0x810f5e3e679ed925!2sSan%20Salvador%2C%20El%20Salvador!5e0!3m2!1ses!2sus!4v1691523456789!5m2!1ses!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Sobre Nosotros</h4>
+        <p>Calidad y sabor auténtico del café salvadoreño.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-envelope"></i> info@cafesupremo.com</p>
+        <p><i class="fas fa-phone"></i> +503 1234 5678</p>
+        <p><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</p>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank" class="social-icon">
+            <img src="image/f.png" alt="Facebook">
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="image/i.png" alt="Instagram">
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="image/images.png" alt="tii">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Sabor y Aroma - Todos los derechos reservados</p>
+  </footer>
+ <script src="js/contact (2).js"></script>
+    
+</body>
+</html>
+
+
+

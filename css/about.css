@@ -1,0 +1,226 @@
+/* ==================== Reset general ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: #FFF8F0;
+    color: #3B2F2F;
+}
+
+/* ==================== Navbar ==================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.logo img {
+    width: 100px;
+    transition: 0.4s;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.nav-links a {
+    color: #4B3621;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #D4AF7F;
+    transition: 0.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* ==================== Hero ==================== */
+.about-hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #4B2E2A, #C69C6D);
+    color: #fff;
+    padding: 0 20px;
+}
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.about-hero h1 span {
+    color: #FFF8F0;
+}
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==================== Historia ==================== */
+.about-history {
+    padding: 80px 10%;
+    text-align: center;
+}
+.about-history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #4B2E2A;
+}
+.about-history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ==================== Tarjetas decorativas ==================== */
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+}
+.about-card {
+    background: #fff8f0;
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.about-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.about-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4B2E2A;
+}
+.about-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5a4b3a;
+}
+.about-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* ==================== Footer ==================== */
+footer {
+    background: #5f5336;
+    color: #fff;
+    padding: 60px 10%;
+    text-align: left;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer-column h4 {
+    color: #D4AF7F;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.footer-column p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social img {
+    width: 32px;
+    transition: 0.3s;
+    filter: brightness(0.9);
+}
+.social img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* ==================== Animaciones ==================== */
+@keyframes fadeInUp {
+    0% {opacity:0; transform:translateY(50px);}
+    100% {opacity:1; transform:translateY(0);}
+}
+
+/* ==================== Ajuste navbar fijo ==================== */
+body, .hero { padding-top: 100px; }
+
+/* ==================== Responsive ==================== */
+@media(max-width:900px){
+    .about-hero h1 { font-size: 2rem; }
+    .about-hero p { font-size: 1rem; }
+    .about-cards { flex-direction: column; align-items: center; }
+    .footer-container { flex-direction: column; align-items: center; text-align: center; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

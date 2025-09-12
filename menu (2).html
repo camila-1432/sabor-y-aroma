@@ -1,0 +1,390 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor y Aroma - Postres Destacados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/menu (2).css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="imagenes/sabor22.png" alt="Logo Cafetería"></a>
+    </div>
+    
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu (2).html" class="active">Menú</a></li>
+      <li><a href="about (2).html">Nosotros</a></li>
+      <li><a href="contact (2).html">Contacto</a></li>
+      <li><a href="compras (2).html" class="cart-link">Compras <span class="cart-count">0</span></a></li>
+    </ul>
+  </nav>
+
+  
+<div class="floating-cart">
+  <a href="compras (2).html" class="cart-icon">
+    <span style="font-size: 24px">🛒</span>
+    <span class="cart-badge">0</span>
+  </a>
+</div>
+
+  
+  <section class="carrusel-postres">
+    <h2>Postres Destacados</h2>
+    <div class="carrusel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carrusel">
+        <!-- Postre 1 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/cheeseeake.png" alt="Cheesecake">
+              <h3>Cheesecake</h3>
+              <p class="price">$3.50</p>
+              <p class="descripcion-breve">Delicioso cheesecake con fresas frescas</p>
+              <button class="btn-add-cart" data-product="Cheesecake" data-price="3.50">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 2 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/brownie.png" alt="Brownie">
+              <h3>Brownie</h3>
+              <p class="price">$2.80</p>
+              <p class="descripcion-breve">Brownie de chocolate intenso con nueces</p>
+              <button class="btn-add-cart" data-product="Brownie" data-price="2.80">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 3 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/trata de frutas.png" alt="Tarta de Frutas">
+              <h3>Tarta de Frutas</h3>
+              <p class="price">$3.00</p>
+              <p class="descripcion-breve">Tarta fresca con crema y frutas de temporada</p>
+              <button class="btn-add-cart" data-product="Tarta de Frutas" data-price="3.00">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 4 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/cupcakes.png" alt="Cupcake">
+              <h3>Cupcake</h3>
+              <p class="price">$2.50</p>
+              <p class="descripcion-breve">Cupcake de vainilla con glaseado de chocolate</p>
+              <button class="btn-add-cart" data-product="Cupcake" data-price="2.50">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 5 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/macarons.png" alt="Macaron">
+              <h3>Macaron</h3>
+              <p class="price">$2.50</p>
+              <p class="descripcion-breve">Delicados macarons de diferentes sabores</p>
+              <button class="btn-add-cart" data-product="Macaron" data-price="2.00">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 6 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/muffins.png" alt="Muffin">
+              <h3>Muffin</h3>
+              <p class="price">$2.70</p>
+              <p class="descripcion-breve">Muffin esponjoso con chispas de chocolate</p>
+              <button class="btn-add-cart" data-product="Muffin" data-price="2.70">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 7 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="image/lllllllllllllllllllllllllllllllllllllllllllllllllllllllll.png" alt="Pie de Limón">
+              <h3>Pie de Limón</h3>
+              <p class="price">$3.20</p>
+              <p class="descripcion-breve">Pie de limón con base crujiente y merengue</p>
+              <button class="btn-add-cart" data-product="Pie de Limón" data-price="3.20">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postre 8 -->
+        <div class="carrusel-item">
+          <div class="product-card">
+            <div class="product-front">
+              <img src="imagenes/postre8.png" alt="Flan">
+              <h3>Flan Casero</h3>
+              <p class="price">$2.90</p>
+              <p class="descripcion-breve">Flan casero con caramelo suave y textura cremosa</p>
+              <button class="btn-add-cart" data-product="Flan Casero" data-price="2.90">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Sección de 8 Productos Adicionales -->
+  <section class="productos">
+    <h2>Nuestros Productos</h2>
+
+    <!-- Producto 1 - Imagen izquierda, info derecha -->
+    <div class="producto-card">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-image">
+              <img src="image/espresso.png" alt="Espresso">
+            </div>
+            <div class="producto-card-info">
+              <h3>Espresso</h3>
+              <p class="price">$2.50</p>
+              <p class="descripcion">Café espresso intenso y aromático.</p>
+              <button class="btn-add-cart" data-product="Espresso" data-price="2.50">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 - Imagen derecha, info izquierda -->
+    <div class="producto-card reverse">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-info">
+              <h3>lced Coffee Latte</h3>
+              <p class="price">$3.65</p>
+              <p class="descripcion">Café frío con hielo y leche .</p>
+              <button class="btn-add-cart" data-product="Latte" data-price="3.00">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+            <div class="producto-card-image">
+              <img src="image/lulu.png" alt="Latte">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 - Imagen izquierda, info derecha -->
+    <div class="producto-card">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-image">
+              <img src="image/cappuccino.png" alt="Cappuccino">
+            </div>
+            <div class="producto-card-info">
+              <h3>Cappuccino</h3>
+              <p class="price">$3.20</p>
+              <p class="descripcion">Cappuccino suave con espuma de leche aterciopelada.</p>
+              <button class="btn-add-cart" data-product="Cappuccino" data-price="3.20">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 4 - Imagen derecha, info izquierda -->
+    <div class="producto-card reverse">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-info">
+              <h3>Mocha</h3>
+              <p class="price">$3.50</p>
+              <p class="descripcion">Deliciosa combinación de espresso, chocolate y leche.</p>
+              <button class="btn-add-cart" data-product="Mocha" data-price="3.50">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+            <div class="producto-card-image">
+              <img src="image/mocha.png" alt="Mocha">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 5 - Imagen izquierda, info derecha -->
+    <div class="producto-card">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-image">
+              <img src="image/americano.jpg" alt="Americano">
+            </div>
+            <div class="producto-card-info">
+              <h3>Americano</h3>
+              <p class="price">$2.80</p>
+              <p class="descripcion">Espresso diluido en agua caliente para un sabor suave.</p>
+              <button class="btn-add-cart" data-product="Americano" data-price="2.80">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 6 - Imagen derecha, info izquierda -->
+    <div class="producto-card reverse">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-info">
+              <h3>Batido de arándanos</h3>
+              <p class="price">$3.90</p>
+              <p class="descripcion">Batido de arándano con crema batida y jalea de arándanos</p>.</p>
+              <button class="btn-add-cart" data-product="Macchiato" data-price="3.10">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+            <div class="producto-card-image">
+              <img src="image/batido.png" alt="Macchiato">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 7 - Imagen izquierda, info derecha -->
+    <div class="producto-card">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-image">
+              <img src="image/te verde.png" alt="Té Verde">
+            </div>
+            <div class="producto-card-info">
+              <h3>Té Verde</h3>
+              <p class="price">$2.50</p>
+              <p class="descripcion">Té verde refrescante con propiedades antioxidantes.</p>
+              <button class="btn-add-cart" data-product="Té Verde" data-price="2.50">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 8 - Imagen derecha, info izquierda -->
+    <div class="producto-card reverse">
+      <div class="product-card">
+        <div class="product-front">
+          <div class="producto-content">
+            <div class="producto-card-info">
+              <h3>Chocolate Caliente</h3>
+              <p class="price">$3.25</p>
+              <p class="descripcion">Chocolate caliente cremoso con topping de malvaviscos.</p>
+              <button class="btn-add-cart" data-product="Chocolate Caliente" data-price="3.25">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito
+              </button>
+            </div>
+            <div class="producto-card-image">
+              <img src="image/cafe con mal.png" alt="Chocolate Caliente">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Sobre Nosotros</h4>
+        <p>Calidad y sabor auténtico del café salvadoreño.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-envelope"></i> info@cafesupremo.com</p>
+        <p><i class="fas fa-phone"></i> +503 1234 5678</p>
+        <p><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</p>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank" class="social-icon">
+            <img src="image/f.png" alt="Facebook">
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon">
+            <img src="image/i.png" alt="Instagram">
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <img src="image/images.png" alt="tii">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Sabor y Aroma - Todos los derechos reservados</p>
+  </footer>
+<script src="js/menu (2).js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

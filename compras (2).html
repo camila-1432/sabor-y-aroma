@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABOR Y AROMA - Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/compras.css">
+</head>
+<body>
+    <!-- Navbar (IGUAL AL MENÚ) -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/sabor22.png" alt="Logo Cafetería"></a>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu (2).html">Menú</a></li>
+            <li><a href="about (2).html">Nosotros</a></li>
+            <li><a href="contact (2).html">Contacto</a></li>
+            <li><a href="compras (2).html" class="active">Compras <span class="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrito flotante (IGUAL AL MENÚ) -->
+    <div class="floating-cart">
+        <a href="compras.html" class="cart-icon">
+            <span style="font-size: 24px">🛒</span>
+            <span class="cart-badge">0</span>
+        </a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="compras-container">
+        <div class="container">
+            <h1>Finalizar Compra</h1>
+            
+            <div class="compras-grid">
+                <!-- Resumen del Pedido -->
+                <div class="resumen-pedido">
+                    <h2>Tu Pedido</h2>
+                    <div class="productos-lista" id="productos-lista">
+                        <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                    </div>
+                    <div class="resumen-total">
+                        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                        <p>Impuestos (13%): <span id="impuestos">$0.00</span></p>
+                        <p class="total">Total: <span id="total">$0.00</span></p>
+                    </div>
+                </div>
+                
+                <!-- Formulario de Compra -->
+                <div class="formulario-compra">
+                    <h2>Información de Entrega</h2>
+                    <form id="formulario-compra">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="direccion">Dirección de entrega *</label>
+                            <textarea id="direccion" name="direccion" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notas">Notas adicionales (opcional)</label>
+                            <textarea id="notas" name="notas" rows="2" placeholder="Indicaciones especiales para la entrega..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="metodo-pago">Método de pago *</label>
+                            <select id="metodo-pago" name="metodo-pago" required>
+                                <option value="">Seleccione un método</option>
+                                <option value="efectivo">Efectivo</option>
+                                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                                <option value="transferencia">Transferencia bancaria</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn-completar-compra">
+                            Completar Compra
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (IGUAL AL MENÚ) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Sobre Nosotros</h4>
+                <p>Calidad y sabor auténtico del café salvadoreño.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> info@cafesupremo.com</p>
+                <p><i class="fas fa-phone"></i> +503 1234 5678</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Salvador, El Salvador</p>
+            </div>
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">
+                        <img src="image/f.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <img src="image/i.png" alt="Instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="image/images.png" alt="tii">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Café Supremo - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/compras.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

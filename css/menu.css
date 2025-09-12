@@ -1,0 +1,313 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== Reset General ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ==================== Navbar ==================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.logo img {
+    width: 100px;
+    transition: 0.4s;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.nav-links a {
+    color: #4B3621;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #D4AF7F;
+    transition: 0.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* ==================== Hero con Video ==================== */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.6);
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    max-width: 700px;
+    z-index: 1;
+    animation: fadeInUp 1.5s ease;
+}
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #F9F5F1;
+    font-weight: 700;
+}
+.hero h1 span {
+    color: #D4AF7F;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #F3E9E0;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.btn {
+    padding: 14px 32px;
+    border-radius: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.5px;
+}
+.btn-solid {
+    background: #D4AF7F;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(212,175,127,0.4);
+}
+.btn-solid:hover {
+    background: #B38B5F;
+    transform: translateY(-3px) scale(1.05);
+}
+.btn-outline {
+    border: 2px solid #D4AF7F;
+    color: #D4AF7F;
+}
+.btn-outline:hover {
+    background: #D4AF7F;
+    color: #fff;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ==================== Carrusel Postres ==================== */
+.carrusel-postres {
+    padding: 120px 10px 50px 10px;
+    text-align: center;
+}
+.carrusel-postres h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4B2E2A;
+}
+.carrusel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.carrusel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+.carrusel-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    min-width: 220px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.carrusel-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; /* Mantiene toda la imagen visible */
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.carrusel-item h3 {
+    color: #4B2E2A;
+    margin: 5px 0;
+}
+.carrusel-item .price {
+    color: #C69C6D;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-info {
+    background: #4B2E2A;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-info:hover {
+    background: #C69C6D;
+    color: #2E1F12;
+}
+.prev, .next {
+    position: absolute;
+    top: 35%;
+    font-size: 2rem;
+    background: rgba(75,46,42,0.8);
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ==================== 8 Productos ==================== */
+.productos {
+    padding: 50px 10%;
+}
+.productos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4B2E2A;
+}
+.producto-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.producto-card:hover { transform: translateY(-5px); }
+.producto-card:nth-child(even) { flex-direction: row-reverse; }
+.producto-card-image img {
+    width: 300px;
+    height: 220px;
+    object-fit: contain; /* Cualquier tamaño se muestra completo */
+}
+.producto-card-info {
+    padding: 20px;
+}
+.producto-card-info h3 {
+    font-size: 1.8rem;
+    color: #4B2E2A;
+    margin-bottom: 10px;
+}
+.producto-card-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #C69C6D;
+    margin-bottom: 10px;
+}
+.producto-card-info .descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ==================== Footer ==================== */
+footer {
+    background: #5f5336;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10%;
+    margin-top: 50px;
+}
+
+/* ==================== Animaciones ==================== */
+@keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(50px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* ==================== Ajuste navbar fijo ==================== */
+body, .hero { padding-top: 100px; }
+
+/* ==================== Responsive ==================== */
+@media(max-width:900px){
+    .hero-content { text-align:center; max-width:90%; }
+    .hero h1 { font-size:3rem; }
+    .hero p { font-size:1rem; }
+    .hero-buttons { flex-direction:column; gap:15px; }
+    .footer-container { flex-direction:column; align-items:center; text-align:center; }
+    .carrusel-container { overflow-x: scroll; }
+    .carrusel { flex-wrap: nowrap; }
+    .carrusel-item { min-width: 180px; }
+    .producto-card { flex-direction: column; text-align: center; }
+    .producto-card:nth-child(even) { flex-direction: column; }
+    .producto-card-image img { width: 100%; height: auto; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
